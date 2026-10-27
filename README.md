@@ -1,0 +1,1 @@
+# Detecting-AI-Generated-Text-Across-Domains-and-Generators---NLP-Project
