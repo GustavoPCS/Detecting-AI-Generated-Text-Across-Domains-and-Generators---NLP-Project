@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+# raw + processed data are large; keep only the manifests
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*.csv
+data/processed_synth/
+*.pt
+*.bin
+*.safetensors
+
+!data/processed/summary.csv
+
+!data/processed/summary.csv
+
+!data/processed/summary.csv
