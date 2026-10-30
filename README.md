@@ -84,6 +84,20 @@ python -m src.finetune_roberta --seeds 42 --out results/roberta_seed42
 python -m src.finetune_roberta --seeds 42 43 44 --out results/roberta_3seeds
 ```
 
+### RoBERTa results and Google Colab
+
+The initial one-seed RoBERTa experiment was run in a Google Colab GPU runtime. Its downloaded, reproducible result artifacts are stored in [`results/roberta_seed42/`](results/roberta_seed42/). The main files are:
+
+| File | Contents |
+|---|---|
+| `metrics.csv` | Held-out performance for every training-domain, test-domain, and generator condition, including macro-F1, AUROC, false-positive rate, confidence intervals, and generalization gaps. |
+| `runtime.csv` | Training time, inference time per 1,000 texts, and peak GPU memory for each fine-tuned model. |
+| `hardware.json` | The Colab GPU and software environment recorded for reproducibility. |
+| `predictions_val.csv` | Validation scores used to select the frozen classification threshold. |
+| `predictions_test.csv` | Per-text held-out test scores used to compute the reported metrics. |
+
+To reproduce these results in Colab, clone the repository's `Project_Update1` branch, select a GPU runtime, install `transformers`, `accelerate`, `pandas`, `numpy`, and `scikit-learn`, and run the one-seed command above. Colab stores outputs only for the lifetime of its runtime, so the result folder must be downloaded and copied back into `results/` before committing it to the repository.
+
 Run the bounded Fast-DetectGPT feasibility check with the fixed `EleutherAI/gpt-neo-2.7B` checkpoint and FP16. The first command checks whether the model fits before scoring; the second scores a deterministic, balanced 32-text news test pilot and records AUROC and runtime telemetry. It uses the analytic discrepancy statistic and is explicitly labeled a pilot because the same checkpoint is used as scoring and reference model.
 
 ```bash
