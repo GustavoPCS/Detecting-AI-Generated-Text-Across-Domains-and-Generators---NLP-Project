@@ -2,6 +2,10 @@
 
 CS 59300 NLP project, Purdue University Fort Wayne (Shreya Sagar, Gustavo Pereira Corsi da Silva).
 
+This repository contains an NLP research project investigating how well AI-generated text detectors generalize when the text domain or generating model changes. Using controlled human-versus-machine datasets from scientific abstracts, news, reviews, and Reddit posts, the project evaluates classical TF–IDF classifiers, fine-tuned transformer detectors such as RoBERTa, and zero-shot methods including Fast-DetectGPT.
+
+The evaluation emphasizes realistic distribution shifts: cross-domain transfer, generator shift from Mistral Chat to Llama Chat, and combined domain-and-generator shift. Experiments use fixed source-level train/validation/test splits, report macro-F1, AUROC, false-positive rate, confidence intervals, training and inference time, and GPU-memory use.
+
 ## Setup
 ```bash
 python -m venv .venv
