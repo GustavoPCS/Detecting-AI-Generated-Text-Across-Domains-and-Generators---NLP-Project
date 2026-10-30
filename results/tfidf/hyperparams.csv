@@ -1,0 +1,9 @@
+method,train_domain,train_generator,best_C,val_auroc,n_train,n_features
+tfidf_lr,abstracts,mistral-chat,10.0,0.9983133749367515,684,42671
+tfidf_svm,abstracts,mistral-chat,1.0,0.9998313374936751,684,42671
+tfidf_lr,news,mistral-chat,10.0,1.0,1292,101065
+tfidf_svm,news,mistral-chat,1.0,1.0,1292,101065
+tfidf_lr,reviews,mistral-chat,0.1,1.0,846,68928
+tfidf_svm,reviews,mistral-chat,0.1,1.0,846,68928
+tfidf_lr,reddit,mistral-chat,10.0,0.9966470112151694,906,57339
+tfidf_svm,reddit,mistral-chat,1.0,0.9961845300034686,906,57339
