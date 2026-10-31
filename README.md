@@ -1,7 +1,10 @@
-Set-Content README.md @'
 # Detecting AI-Generated Text Across Domains and Generators
 
 CS 59300 NLP project, Purdue University Fort Wayne (Shreya Sagar, Gustavo Pereira Corsi da Silva).
+
+This repository contains an NLP research project investigating how well AI-generated text detectors generalize when the text domain or generating model changes. Using controlled human-versus-machine datasets from scientific abstracts, news, reviews, and Reddit posts, the project evaluates classical TF–IDF classifiers, fine-tuned transformer detectors such as RoBERTa, and zero-shot methods including Fast-DetectGPT.
+
+The evaluation emphasizes realistic distribution shifts: cross-domain transfer, generator shift from Mistral Chat to Llama Chat, and combined domain-and-generator shift. Experiments use fixed source-level train/validation/test splits, report macro-F1, AUROC, false-positive rate, confidence intervals, training and inference time, and GPU-memory use.
 
 ## Setup
 ```bash
@@ -61,4 +64,43 @@ Total: 10,148 rows.
 - **Human texts differ by generator:** length matching is run separately per generator, so the human test set for G1 and G2 is not identical. Planned fix: one fixed human set per domain and split.
 - **Near-duplicate detection** is prefix-based, not MinHash.
 - Only greedy / no-repetition-penalty is built so far; the MAGE external check is not included yet.
-'@
+
+## GPU initial results
+
+Install the GPU dependencies in a CUDA environment (choose the matching PyTorch CUDA wheel if the standard install does not provide CUDA):
+
+```bash
+pip install -r requirements-gpu.txt
+python -c "import torch; print(torch.cuda.get_device_name(0), torch.cuda.get_device_properties(0).total_memory / 2**30)"
+```
+
+Fine-tune one RoBERTa-base detector per domain on G1 (Mistral Chat). This evaluates both the in-generator condition and the required same-domain G1-to-G2 generator shift. Every run writes `hardware.json`, predictions, metrics, and `runtime.csv` with training time, inference milliseconds per 1,000 texts, and peak GPU memory.
+
+```bash
+# Initial one-seed results
+python -m src.finetune_roberta --seeds 42 --out results/roberta_seed42
+
+# Three-seed follow-up
+python -m src.finetune_roberta --seeds 42 43 44 --out results/roberta_3seeds
+```
+
+### RoBERTa results and Google Colab
+
+The initial one-seed RoBERTa experiment was run in a Google Colab GPU runtime. Its downloaded, reproducible result artifacts are stored in [`results/roberta_seed42/`](results/roberta_seed42/). The main files are:
+
+| File | Contents |
+|---|---|
+| `metrics.csv` | Held-out performance for every training-domain, test-domain, and generator condition, including macro-F1, AUROC, false-positive rate, confidence intervals, and generalization gaps. |
+| `runtime.csv` | Training time, inference time per 1,000 texts, and peak GPU memory for each fine-tuned model. |
+| `hardware.json` | The Colab GPU and software environment recorded for reproducibility. |
+| `predictions_val.csv` | Validation scores used to select the frozen classification threshold. |
+| `predictions_test.csv` | Per-text held-out test scores used to compute the reported metrics. |
+
+To reproduce these results in Colab, clone the repository's `Project_Update1` branch, select a GPU runtime, install `transformers`, `accelerate`, `pandas`, `numpy`, and `scikit-learn`, and run the one-seed command above. Colab stores outputs only for the lifetime of its runtime, so the result folder must be downloaded and copied back into `results/` before committing it to the repository.
+
+Run the bounded Fast-DetectGPT feasibility check with the fixed `EleutherAI/gpt-neo-2.7B` checkpoint and FP16. The first command checks whether the model fits before scoring; the second scores a deterministic, balanced 32-text news test pilot and records AUROC and runtime telemetry. It uses the analytic discrepancy statistic and is explicitly labeled a pilot because the same checkpoint is used as scoring and reference model.
+
+```bash
+python -m src.fast_detectgpt_pilot --precision fp16 --memory-check-only
+python -m src.fast_detectgpt_pilot --domain news --generator mistral-chat --split test --max-texts 32 --precision fp16
+```

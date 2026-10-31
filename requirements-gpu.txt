@@ -1,0 +1,6 @@
+# Install after requirements.txt in a CUDA-enabled environment. Select the matching
+# PyTorch CUDA wheel from https://pytorch.org/get-started/locally/ if needed.
+-r requirements.txt
+torch>=2.1
+transformers>=4.40
+accelerate>=0.28

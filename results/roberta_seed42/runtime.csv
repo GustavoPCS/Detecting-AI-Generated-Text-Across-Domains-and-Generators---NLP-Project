@@ -1,0 +1,5 @@
+method,seed,train_domain,train_generator,model,epochs,batch_size,max_length,n_train,train_seconds,inference_ms_per_1000_texts,peak_gpu_memory_gib_train,peak_gpu_memory_gib_inference
+roberta_base_seed42,42,abstracts,mistral-chat,roberta-base,3,16,256,684,85.45755623699995,15309.091700394223,3.933884620666504,1.5826396942138672
+roberta_base_seed42,42,news,mistral-chat,roberta-base,3,16,256,1292,184.96474649699985,17213.19723455966,3.934006690979004,1.5855693817138672
+roberta_base_seed42,42,reviews,mistral-chat,roberta-base,3,16,256,846,120.222166539,16209.753287122225,3.933884620666504,1.5848369598388672
+roberta_base_seed42,42,reddit,mistral-chat,roberta-base,3,16,256,906,127.41593875700005,16301.19852825224,3.939866065979004,1.5894756317138672
