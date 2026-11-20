@@ -1,0 +1,161 @@
+train_domain,direction,feature,weight
+abstracts,machine,word__the paper,2.483081680803896
+abstracts,machine,word__paper,2.4020681390931067
+abstracts,machine,word__presents,1.7822332145473299
+abstracts,machine,word__study,1.7388050269895565
+abstracts,machine,word__provides,1.6310689883328173
+abstracts,machine,word__our results,1.625113319442087
+abstracts,machine,word__paper presents,1.5644573785724367
+abstracts,machine,word__overall,1.5431316461609186
+abstracts,machine,word__implications,1.4217224343532036
+abstracts,machine,word__our,1.406976638928114
+abstracts,machine,word__results show,1.3513484640800772
+abstracts,machine,word__combination of,1.340376911136357
+abstracts,machine,word__involves,1.334593465206979
+abstracts,machine,word__show that,1.2562887199521608
+abstracts,machine,word__the results,1.2445246265629248
+abstracts,machine,word__combination,1.2272794476021522
+abstracts,machine,word__paper we,1.226683264549628
+abstracts,machine,word__this paper,1.2231311138408867
+abstracts,machine,word__novel approach,1.2155460930925914
+abstracts,machine,char__ pap,1.2110218816017464
+abstracts,human,word__an,-1.7652344828273185
+abstracts,human,word__by,-1.2979502271260643
+abstracts,human,word__are,-1.297278395496737
+abstracts,human,word__one,-1.2032754339695109
+abstracts,human,word__with,-1.2018635361938483
+abstracts,human,word__from,-1.0717034333595532
+abstracts,human,word__we,-1.0676111407912958
+abstracts,human,word__as,-1.0574836594106414
+abstracts,human,word__many,-1.0292515270392435
+abstracts,human,char__lly ,-0.9790035393534497
+abstracts,human,word__this work,-0.9709588656578004
+abstracts,human,char__ally ,-0.968156625096962
+abstracts,human,word__at,-0.9387908915926522
+abstracts,human,word__order,-0.899538488470687
+abstracts,human,word__space,-0.8587993825715254
+abstracts,human,word__over,-0.8244543708716067
+abstracts,human,word__thus,-0.8217248519697429
+abstracts,human,word__or,-0.8148107852494263
+abstracts,human,word__mean,-0.7974910573552108
+abstracts,human,word__particular,-0.796574067424598
+news,machine,word__has been,2.488912114739723
+news,machine,word__been,2.274868856824118
+news,machine,word__has,1.9047168939945722
+news,machine,word__has also,1.4650242421728337
+news,machine,word__who,1.3916243464617697
+news,machine,char__been ,1.3815362392649406
+news,machine,char__been,1.3795098743977319
+news,machine,char__ been,1.3795098743977319
+news,machine,char__ bee,1.375670817683148
+news,machine,char__bee,1.3718214416333856
+news,machine,word__in recent,1.3640924278350302
+news,machine,word__significant,1.3518176873783414
+news,machine,word__including,1.312085756605047
+news,machine,word__several,1.3015951410597422
+news,machine,word__about the,1.277218786163401
+news,machine,word__their,1.2747906808436482
+news,machine,char__ has ,1.2620560824884872
+news,machine,char__has ,1.2592375278817798
+news,machine,char__ has,1.2562012102912306
+news,machine,word__however,1.2560207789337405
+news,human,word__mr,-2.514739696934623
+news,human,word__would,-2.2214407259930877
+news,human,char__ - ,-2.095155076041752
+news,human,word__year,-2.0919555968882446
+news,human,word__said,-1.9275282176436341
+news,human,word__an,-1.8565459290861135
+news,human,word__last,-1.8020300511400391
+news,human,word__at,-1.776303412793827
+news,human,word__but,-1.696621928297319
+news,human,word__told,-1.6658862831768764
+news,human,word__says,-1.5532564904584691
+news,human,word__said the,-1.5486918882764333
+news,human,word__added,-1.5233769184487338
+news,human,word__firm,-1.4823050888760276
+news,human,word__than,-1.4678568127136318
+news,human,word__us,-1.4325543458157215
+news,human,word__you,-1.345616363217588
+news,human,word__there,-1.2567304098107768
+news,human,word__week,-1.2387430843131655
+news,human,char__mr ,-1.2378251814313581
+reviews,machine,word__the film,0.31110553294429205
+reviews,machine,word__overall,0.2815454886502012
+reviews,machine,word__must see,0.25241258294702124
+reviews,machine,word__film that,0.2487138135897238
+reviews,machine,word__stunning,0.24639354625815757
+reviews,machine,word__is must,0.24551491202844367
+reviews,machine,word__must,0.24089189096806818
+reviews,machine,word__that will,0.23226786011185074
+reviews,machine,word__fans of,0.2221225805183606
+reviews,machine,word__for fans,0.21775392239188734
+reviews,machine,word__follows,0.21422571706696597
+reviews,machine,word__fans,0.2121466887137482
+reviews,machine,word__film,0.2039026477106923
+reviews,machine,word__cast,0.20091350232388658
+reviews,machine,word__see for,0.1994205928333834
+reviews,machine,word__performances,0.1944667642411431
+reviews,machine,word__delivering,0.19417189322823689
+reviews,machine,word__standout,0.18971659706392446
+reviews,machine,word__their,0.1860007415524081
+reviews,machine,word__leave,0.18325584122769328
+reviews,human,word__this,-0.3569291832875675
+reviews,human,word__was,-0.3402489428694676
+reviews,human,word__but,-0.3208487815804672
+reviews,human,word__movie,-0.24164627952940446
+reviews,human,word__not,-0.23758291762811443
+reviews,human,char__ i ,-0.23573984168038112
+reviews,human,word__so,-0.22224627230665728
+reviews,human,word__my,-0.21647561851266905
+reviews,human,word__it,-0.21141186189441488
+reviews,human,word__be,-0.20346855587037385
+reviews,human,word__this movie,-0.20327338715527485
+reviews,human,word__like,-0.20216180404241896
+reviews,human,word__at,-0.19881030632837363
+reviews,human,word__there,-0.19066665031455535
+reviews,human,word__if,-0.18566240991938548
+reviews,human,word__just,-0.18021458008779148
+reviews,human,word__what,-0.17927335925334928
+reviews,human,char__ thi,-0.1738051871221333
+reviews,human,word__much,-0.17236884891528959
+reviews,human,char__this,-0.17010838319170032
+reddit,machine,word__but it,1.773089132018541
+reddit,machine,word__not sure,1.6179659085439666
+reddit,machine,char__it's ,1.494837395897179
+reddit,machine,char__it's,1.494837395897179
+reddit,machine,char__it',1.4863937817532196
+reddit,machine,word__ve been,1.483211717598418
+reddit,machine,char__ it's,1.4830032582232795
+reddit,machine,char__ it',1.4830032582232795
+reddit,machine,word__sure,1.4049408648985517
+reddit,machine,word__been,1.347169522040991
+reddit,machine,char__t's,1.3440956650716405
+reddit,machine,char__t's ,1.3440956650716405
+reddit,machine,char__'s ,1.3195788684420073
+reddit,machine,word__tried,1.2890939756737412
+reddit,machine,word__feeling,1.2629894682233156
+reddit,machine,word__important,1.232719477316556
+reddit,machine,word__for while,1.1724725947443868
+reddit,machine,word__overall,1.1696968386645161
+reddit,machine,word__also,1.141161515248825
+reddit,machine,word__help,1.1260269059312655
+reddit,human,word__so,-2.7369061777033994
+reddit,human,word__because,-2.059500516854156
+reddit,human,word__am,-2.0022062484421013
+reddit,human,word__my,-1.8072294018904271
+reddit,human,word__is,-1.7209148373731549
+reddit,human,word__have,-1.6962667770557502
+reddit,human,word__at,-1.6955594513316916
+reddit,human,word__since,-1.6662276056356062
+reddit,human,word__me,-1.6600564209491302
+reddit,human,word__get,-1.5327818946894614
+reddit,human,word__just,-1.488497023577472
+reddit,human,word__all,-1.4453961839816545
+reddit,human,char__ so ,-1.4297333387425781
+reddit,human,word__then,-1.387687170839963
+reddit,human,word__very,-1.3649595480474757
+reddit,human,word__no,-1.3631916783178795
+reddit,human,word__got,-1.2685441114760958
+reddit,human,word__do,-1.2372073794966962
+reddit,human,word__than,-1.231950584281687
+reddit,human,word__did,-1.2269389460410483
