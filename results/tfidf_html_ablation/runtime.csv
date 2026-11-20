@@ -1,0 +1,9 @@
+method,train_domain,train_generator,train_seconds,infer_ms_per_1000_texts
+tfidf_lr,abstracts,mistral-chat,5.184704600018449,5617.122207697892
+tfidf_svm,abstracts,mistral-chat,4.72215599991614,7485.9016426378785
+tfidf_lr,news,mistral-chat,7.886997299967334,3857.3379764050665
+tfidf_svm,news,mistral-chat,7.2216430000262335,2037.639750368739
+tfidf_lr,reviews,mistral-chat,2.600311399961356,3719.886728054838
+tfidf_svm,reviews,mistral-chat,2.585779899964109,3900.869908046868
+tfidf_lr,reddit,mistral-chat,2.9716236000531353,2779.5314717531182
+tfidf_svm,reddit,mistral-chat,2.7139820000738837,2945.575164401544

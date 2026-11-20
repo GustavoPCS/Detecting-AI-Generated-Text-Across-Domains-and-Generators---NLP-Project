@@ -1,0 +1,17 @@
+domain,generator,label,n_texts,n_changed,pct_changed
+abstracts,llama-chat,0,345,315,0.9130434782608695
+abstracts,llama-chat,1,345,107,0.3101449275362319
+abstracts,mistral-chat,0,483,475,0.9834368530020704
+abstracts,mistral-chat,1,483,102,0.2111801242236025
+news,llama-chat,0,884,176,0.19909502262443438
+news,llama-chat,1,884,19,0.021493212669683258
+news,mistral-chat,0,917,265,0.2889858233369684
+news,mistral-chat,1,917,490,0.5343511450381679
+reddit,llama-chat,0,539,103,0.19109461966604824
+reddit,llama-chat,1,539,370,0.686456400742115
+reddit,mistral-chat,0,645,124,0.19224806201550387
+reddit,mistral-chat,1,645,455,0.7054263565891473
+reviews,llama-chat,0,640,565,0.8828125
+reviews,llama-chat,1,640,142,0.221875
+reviews,mistral-chat,0,621,453,0.7294685990338164
+reviews,mistral-chat,1,621,428,0.6892109500805152
