@@ -1,0 +1,9 @@
+method,train_domain,domain,generator,group,n,mean_words,median_words,mean_score
+tfidf_lr,reddit,abstracts,mistral-chat,false_positive,56,151.16071428571428,141.5,0.5663243776563605
+tfidf_lr,reddit,abstracts,mistral-chat,true_negative,8,158.25,143.0,-0.7799703050344993
+tfidf_lr,reddit,news,mistral-chat,false_positive,31,238.19354838709677,256.0,-0.01785764373842079
+tfidf_lr,reddit,news,mistral-chat,true_negative,107,242.42056074766356,256.0,-1.4127851392641075
+tfidf_svm,reddit,abstracts,mistral-chat,false_positive,56,150.25,141.0,0.11903482443276246
+tfidf_svm,reddit,abstracts,mistral-chat,true_negative,8,164.625,165.0,-0.28895945068059503
+tfidf_svm,reddit,news,mistral-chat,false_positive,37,241.0810810810811,256.0,-0.03623526866353034
+tfidf_svm,reddit,news,mistral-chat,true_negative,101,241.6138613861386,256.0,-0.4502803008720082

@@ -1,0 +1,5 @@
+method,train_domain,domain,generator,n_human,n_fp,n_tn,fpr,threshold
+tfidf_lr,reddit,abstracts,mistral-chat,64,56,8,0.875,-0.4247127369410495
+tfidf_lr,reddit,news,mistral-chat,138,31,107,0.2246376811594203,-0.4247127369410495
+tfidf_svm,reddit,abstracts,mistral-chat,64,56,8,0.875,-0.2016880623154591
+tfidf_svm,reddit,news,mistral-chat,138,37,101,0.26811594202898553,-0.2016880623154591
