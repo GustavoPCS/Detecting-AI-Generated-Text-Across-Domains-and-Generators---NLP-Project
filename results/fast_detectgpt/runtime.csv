@@ -1,0 +1,13 @@
+method,checkpoint,train_domain,train_generator,phase,n_texts,seconds,ms_per_1000_texts,peak_gpu_memory_gib
+fast_detectgpt_analytic,EleutherAI/gpt-neo-2.7B,abstracts,mistral-chat,validation,154,13.470518697999978,87470.9006363635,5.310683250427246
+fast_detectgpt_analytic,EleutherAI/gpt-neo-2.7B,news,mistral-chat,validation,266,26.821814284000084,100833.8882857146,5.310683250427246
+fast_detectgpt_analytic,EleutherAI/gpt-neo-2.7B,reviews,mistral-chat,validation,180,17.17580893200011,95421.16073333393,5.310683250427246
+fast_detectgpt_analytic,EleutherAI/gpt-neo-2.7B,reddit,mistral-chat,validation,186,18.370034583000006,98763.62679032261,5.310683250427246
+fast_detectgpt_analytic,EleutherAI/gpt-neo-2.7B,,mistral-chat,test_abstracts_mistral-chat,128,12.658361894000109,98893.45229687585,5.310683250427246
+fast_detectgpt_analytic,EleutherAI/gpt-neo-2.7B,,mistral-chat,test_abstracts_llama-chat,92,10.521800291999853,114367.39447825926,5.310683250427246
+fast_detectgpt_analytic,EleutherAI/gpt-neo-2.7B,,mistral-chat,test_news_mistral-chat,276,33.43074985500016,121125.9052717397,5.310683250427246
+fast_detectgpt_analytic,EleutherAI/gpt-neo-2.7B,,mistral-chat,test_news_llama-chat,268,32.389604557999974,120856.73342537304,5.310683250427246
+fast_detectgpt_analytic,EleutherAI/gpt-neo-2.7B,,mistral-chat,test_reviews_mistral-chat,216,24.09586457399996,111554.92858333315,5.310683250427246
+fast_detectgpt_analytic,EleutherAI/gpt-neo-2.7B,,mistral-chat,test_reviews_llama-chat,174,21.33147094800006,122594.66062068999,5.310683250427246
+fast_detectgpt_analytic,EleutherAI/gpt-neo-2.7B,,mistral-chat,test_reddit_mistral-chat,198,21.945260011000073,110834.6465202024,5.310683250427246
+fast_detectgpt_analytic,EleutherAI/gpt-neo-2.7B,,mistral-chat,test_reddit_llama-chat,170,19.08561938699995,112268.34933529382,5.310683250427246
