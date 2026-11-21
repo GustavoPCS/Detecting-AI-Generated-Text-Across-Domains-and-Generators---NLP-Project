@@ -1,0 +1,8 @@
+[
+  {
+    "checkpoint": "EleutherAI/gpt-neo-2.7B",
+    "status": "loaded",
+    "load_seconds": 188.795385463,
+    "peak_gpu_memory_gib_load": 5.064035415649414
+  }
+]

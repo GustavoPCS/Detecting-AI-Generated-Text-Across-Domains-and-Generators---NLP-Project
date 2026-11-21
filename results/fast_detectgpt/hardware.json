@@ -1,0 +1,7 @@
+{
+  "gpu_name": "Tesla T4",
+  "gpu_total_memory_gib": 14.56,
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "selected_checkpoint": "EleutherAI/gpt-neo-2.7B"
+}

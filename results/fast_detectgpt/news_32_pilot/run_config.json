@@ -1,0 +1,8 @@
+{
+  "checkpoint": "EleutherAI/gpt-neo-2.7B",
+  "n_texts": 32,
+  "auroc": 1.0,
+  "inference_seconds": 3.816292934999865,
+  "inference_ms_per_1000_texts": 119259.15421874578,
+  "peak_gpu_memory_gib_inference": 5.310683250427246
+}
